@@ -3,13 +3,19 @@ networks:
   ghost:
 services:
   ghost-app:
-    build: ghost
+    image: ghost:latest
     networks:
       - ghost
     depends_on:
       - db
     ports:
       - "2368:2368"
+    environment:
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: mysqlroot
+      database__connection__database: ghost
 
   nginx:
     build: nginx
@@ -26,8 +32,6 @@ services:
       - ghost
     environment:
       MYSQL_ROOT_PASSWORD: mysqlroot
-      MYSQL_GHOST: ghost
-      MYSQL_PASSWORD: ghost
     volumes:
       - $PWD/data:/var/lib/mysql
     ports:
