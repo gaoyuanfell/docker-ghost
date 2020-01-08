@@ -16,13 +16,11 @@ services:
       database__connection__database: ghost
 
   nginx:
-    image: nginx:latest
+    build: nginx
     networks:
       - ghost
     ports:
       - "80:80"
-    volumes:
-      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
 
   db:
     image: "mysql:5.7.15"
