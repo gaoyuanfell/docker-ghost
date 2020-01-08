@@ -6,6 +6,8 @@ services:
     image: ghost:latest
     networks:
       - ghost
+    depends_on:
+      - db
     ports:
       - "2368:2368"
     environment:
@@ -19,6 +21,8 @@ services:
     build: nginx
     networks:
       - ghost
+    depends_on:
+      - ghost-app
     ports:
       - "80:80"
 
