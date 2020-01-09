@@ -18,6 +18,3 @@
 
 - while connecting to upstream, client: 172.18.0.1, server: localhost
 - 解决方案 使用本机真实 IP 地址
-- 解决方案
-  - `setsebool -P httpd_can_network_connect 1`
-  - `打开 vim /etc/selinux/config 找到 SELINUX=enforcing 改为 SELINUX=disabled`
