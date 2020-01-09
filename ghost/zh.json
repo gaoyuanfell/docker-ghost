@@ -1,34 +1,34 @@
 {
   "common": {
     "mail": {
-      "title": "Ghost at {domain}"
+      "title": "博客 {domain}"
     },
-    "seeLinkForInstructions": "See {link} for instructions.",
+    "seeLinkForInstructions": "有关说明，请参见 {link} .",
     "time": {
-      "seconds": "seconds"
+      "seconds": "秒"
     },
     "api": {
       "authentication": {
-        "sampleBlogDescription": "Thoughts, stories and ideas.",
+        "sampleBlogDescription": "思想，故事和想法。",
         "mail": {
-          "resetPassword": "Reset Password",
-          "checkEmailForInstructions": "Check your email for further instructions.",
-          "passwordChanged": "Password changed successfully.",
-          "invitationAccepted": "Invitation accepted.",
-          "yourNewGhostBlog": "Your New Ghost Site"
+          "resetPassword": "重置密码",
+          "checkEmailForInstructions": "查看您的电子邮件以获取进一步的说明。",
+          "passwordChanged": "密码更改成功。",
+          "invitationAccepted": "接受邀请。",
+          "yourNewGhostBlog": "你的新博客网站"
         }
       },
       "mail": {
-        "testGhostEmail": "Test Ghost Email"
+        "testGhostEmail": "验证博客电子邮件"
       },
       "users": {
         "mail": {
-          "invitedByName": "{invitedByName} has invited you to join {blogName}"
+          "invitedByName": "{invitedByName} 邀请您加入 {blogName}"
         }
       },
       "actions": {
         "images": {
-          "upload": "upload image"
+          "upload": "上传图片"
         }
       }
     }
