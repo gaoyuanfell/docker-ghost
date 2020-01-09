@@ -3,7 +3,7 @@ networks:
   ghost:
 services:
   ghost-app:
-    image: ghost:latest
+    build: ghost
     networks:
       - ghost
     depends_on:
